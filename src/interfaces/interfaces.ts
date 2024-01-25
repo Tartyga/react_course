@@ -5,14 +5,14 @@ export interface Restaurant {
 	reviews: Review[];
 }
 
-interface Menu {
+export interface Menu {
 	id: string;
 	name: string;
 	price: number;
 	ingredients: string[];
 }
 
-interface Review {
+export interface Review {
 	id: string;
 	user: string;
 	text: string;
