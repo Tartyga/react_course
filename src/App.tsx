@@ -1,15 +1,12 @@
-import { Restaurant } from './interfaces/interfaces.ts';
-import { Layout } from './components/layout'
-import { RestaurantItem } from './components/restaurant-item'
-import { restaurants } from './constants/mock'
+import { Restaurants } from './components/restaurants/component';
+import { Layout } from './components/layout/component';
+import { restaurants } from './constants/mock.ts';
 
 export const App = () => {
 	return (
 		<Layout>
-			<div className="page">
-				{restaurants.map((item: Restaurant) => (
-					<RestaurantItem key={item.id} {...item} />
-				))}
+			<div className="content">
+				<Restaurants restaurants={restaurants} />
 			</div>
 		</Layout>
 	)

@@ -1,6 +1,6 @@
-import { Props } from '../footer/types';
-import { Footer } from '../footer';
-import { Header } from '../header';
+import { ReactNode } from 'react';
+import { Footer } from '../footer/component';
+import { Header } from '../header/component';
 
 export const Layout = ({ children }: Props) => {
 	return (
@@ -10,4 +10,8 @@ export const Layout = ({ children }: Props) => {
 			<Footer />
 		</div>
 	);
+}
+
+export type Props = {
+	children: ReactNode
 }

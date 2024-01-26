@@ -1,0 +1,8 @@
+.item {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  & > *:last-child {
+    justify-content: flex-end;
+  }
+}

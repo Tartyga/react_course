@@ -26,7 +26,10 @@ footer {
   flex: 0;
 }
 
-.page {
-  padding: 20px;
+.content {
+  padding: 20px 0;
+  margin: 0 auto;
   flex: 1;
+  max-width: 980px;
+  width: 100%;
 }
