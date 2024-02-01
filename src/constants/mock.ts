@@ -1,4 +1,4 @@
-import { Restaurant } from '../interfaces/interfaces.ts';
+import { IRestaurant } from '../types/interfaces.ts';
 
 export const restaurants = [
   {
@@ -141,4 +141,4 @@ export const restaurants = [
       },
     ],
   },
-] as Restaurant[];
+] as IRestaurant[];

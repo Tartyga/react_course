@@ -1,18 +1,18 @@
-export interface Restaurant {
+export interface IRestaurant {
 	id: string;
 	name: string;
-	menu: Menu[];
-	reviews: Review[];
+	menu: IMenu[];
+	reviews: IReview[];
 }
 
-interface Menu {
+export interface IMenu {
 	id: string;
 	name: string;
 	price: number;
 	ingredients: string[];
 }
 
-interface Review {
+export interface IReview {
 	id: string;
 	user: string;
 	text: string;
