@@ -1,8 +1,7 @@
-import { FC } from 'react';
 import { IReview } from '../../types/interfaces';
 import { Review } from '../review/component';
 
-export const Reviews: FC<Props> = ({reviews}) => {
+export const Reviews = ({reviews}: Props) => {
 	return (
 		<div>
 			{reviews?.map((review: IReview) => (
