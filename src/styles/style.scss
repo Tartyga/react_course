@@ -33,3 +33,15 @@ footer {
   max-width: 980px;
   width: 100%;
 }
+
+button {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &.active {
+    background-color: yellow;
+  }
+}
+

@@ -1,8 +1,8 @@
-import { ReactNode } from 'react';
+import { FC, ReactNode } from 'react';
 import { Footer } from '../footer/component';
 import { Header } from '../header/component';
 
-export const Layout = ({ children }: Props) => {
+export const Layout: FC<Props> = ({ children }) => {
 	return (
 		<div className="container">
 			<Header />

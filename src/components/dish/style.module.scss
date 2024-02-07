@@ -1,8 +1,14 @@
-.item {
+.root {
   display: flex;
   width: 50%;
+  margin-bottom: 10px;
   justify-content: space-between;
   & > *:last-child {
     justify-content: flex-end;
   }
+}
+
+.price {
+  display: flex;
+  gap: 10px;
 }

@@ -1,9 +1,10 @@
+import { FC } from 'react';
 import { IRestaurant } from '../../types/interfaces.ts';
 import { Menu } from '../menu/component.tsx';
 import { Reviews } from '../reviews/component.tsx';
 import styles from './style.module.scss';
 
-export const Restaurant = ({name, menu, reviews}: Partial<IRestaurant>) => {
+export const Restaurant: FC<Props> = ({name, menu, reviews}) => {
 	return (
 		<div className={styles.container}>
 			<h1>{name}</h1>
@@ -14,3 +15,5 @@ export const Restaurant = ({name, menu, reviews}: Partial<IRestaurant>) => {
 		</div>
 	);
 }
+
+type Props = Pick<IRestaurant, 'name' | 'menu' | 'reviews'>;
