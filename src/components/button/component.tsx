@@ -3,6 +3,7 @@ import { FC } from 'react';
 export const Button: FC<Props> = ({children, disabled, className, onClick}) => {
 	return (
 		<button
+			type="button"
 			className={className}
 			disabled={disabled}
 			onClick={onClick}
