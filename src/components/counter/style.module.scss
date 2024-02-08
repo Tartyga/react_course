@@ -1,0 +1,10 @@
+.root {
+  button {
+    margin: 0 5px;
+    cursor: pointer;
+
+    &:disabled {
+      opacity: .5;
+    }
+  }
+}

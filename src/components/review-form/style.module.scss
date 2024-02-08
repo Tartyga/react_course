@@ -1,0 +1,9 @@
+.root {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.row:not(:last-child) {
+  margin-bottom: 10px;
+}
